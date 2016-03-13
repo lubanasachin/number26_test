@@ -1,0 +1,124 @@
+/* screenwidth less than or equal 900px
+--------------------------------------------------------------------- */
+@media only screen and (max-width: 900px) {
+#nav-wrap { font: 10px 'montserrat-regular', sans-serif; }
+}
+
+/* screenwidth less than 768px - mobile/smaller tablets
+---------------------------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+#nav-wrap {
+font: 11px 'montserrat-regular', sans-serif;
+background: transparent !important;
+letter-spacing: 1.5px;  
+color: #515968;
+
+position: absolute;
+top: 0;
+right: 0;
+}
+#nav-wrap > a {	   
+text-align: left;
+border: none;            
+color: #fff;
+font-size: 12px;
+height: 54px;
+line-height: 54px; 
+float: right;     
+
+font: 0/0 a;
+text-shadow: none;
+color: transparent;
+
+position: relative;
+top: 0px;
+right: 36px;
+}
+#nav-wrap > a:before {
+font-family: 'FontAwesome';
+content: "\f0c9";
+color: #fff;
+margin: 0;
+font-size: 25px;
+line-height: 54px;
+text-align: left;      
+display: block; 
+float: right;     
+}
+
+/* hide menu panel */
+#nav-wrap ul#nav {
+padding: 24px 36px 48px 36px;
+background: #1D2025; 
+height: auto;
+display: none;
+clear: both;
+width: auto; 
+
+position: relative;
+top: 0;
+right: 30px;           
+}
+
+/* display toggle buttons */
+.no-js #nav-wrap:not( :target ) > a:first-of-type,
+.no-js #nav-wrap:target > a:last-of-type  {
+display: block;
+} 
+.js #nav-wrap a { display: block; }  
+
+/* display menu panels - no JS*/
+.no-js #nav-wrap:target > ul#nav  {
+display: block;           
+}
+
+ul#nav li {
+display: block;
+height: auto;      
+text-align: left;
+border-bottom: 1px solid #2D2E34;
+border-bottom-style: dotted; 
+}
+
+ul#nav li a {  
+display: block;   
+width: auto;  
+margin: 0;
+padding: 0;      
+margin: 12px 0; 
+line-height: 16px; /* reset line-height from 54px */
+border: none;
+}  
+
+header .logo { margin-right: 36px; }
+footer { text-align: center; }
+}
+
+/* screenwidth less than or equal 480px - mobile wide
+-------------------------------------------------------------------------- */
+@media only screen and (max-width: 480px) {   
+#nav-wrap { width: 100%; }
+#nav-wrap ul#nav { 
+width: 100%;
+float: none;
+right: 0;             
+}
+#nav-wrap a {display:block;}
+footer .right-cols .columns { padding: 0 10px; }        
+}
+
+/* make sure the menu is visible on larger screens
+-------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+#nav-wrap ul#nav { display: block !important; }
+}
+
+
+
+
+
+
+
+
+
